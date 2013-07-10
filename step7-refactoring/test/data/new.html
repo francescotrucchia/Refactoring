@@ -1,0 +1,76 @@
+
+<html>
+  <head>
+    <title>Rubrica Telefonica</title>
+    
+    <style>
+    body{
+      font-family: Helvetica;
+      font-size: 14px;
+    }
+    
+    label{
+      display: block;
+      background-color: #ddd;
+      margin: 5px 0px;
+      padding: 4px;
+      font-weight: bold;
+      width: 250px;
+    }
+    
+    form{
+      margin-left: 10px;
+    }
+    
+    input[type="text"]{
+      width: 250px;
+    }
+    
+    .actions{
+      margin-bottom: 10px;
+    }
+    
+    #footer{
+      padding: 5px;
+      border-top: 1px solid #000;
+      margin-top: 10px;
+    }
+    </style>
+  </head>
+  
+  <body>
+  
+  <div id="header">
+    <h1>Rubrica Telefonica</h1>
+  </div>
+  
+  <div id="content">
+<form method="post">
+
+
+<input type="hidden" name="id" value="" />
+
+<label for="nome">Nome*</label>
+<input type="text" id="nome" name="nome" value="" />
+
+<label for="cognome">Cognome*</label>
+<input type="text" id="cognome" name="cognome" value="" />
+
+<label for="telefono">Telefono*</label>
+<input type="text" id="telefono" name="telefono" value="" />
+
+<label for="cellulare">Cellulare</label>
+<input type="text" id="cellulare" name="cellulare" value="" />
+
+<br/><br/>
+<input type="submit" value="Salva" />
+<a href="index.php" >Annulla</a>
+</form>
+<em>(* Campi obbligatori)</em>
+    </div>
+    
+    <div id="footer">
+    All &copy; phpDay 2009
+    </div>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>AddContactTest</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">AddContactTest</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/refactoring/index.php</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Nuovo contatto</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Rubrica Telefonica</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='header']/h1</td>
+	<td>Rubrica Telefonica</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='content']/form/label[1]</td>
+	<td>exact:Nome*</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='content']/form/label[2]</td>
+	<td>exact:Cognome*</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='content']/form/label[3]</td>
+	<td>exact:Telefono*</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='content']/form/label[4]</td>
+	<td>Cellulare</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>nome</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>cognome</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>telefono</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>cellulare</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>link=Annulla</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='content']/em</td>
+	<td>exact:(* Campi obbligatori)</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>footer</td>
+	<td>All © phpDay 2009</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>nome</td>
+	<td>Girolamo</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cognome</td>
+	<td>Pompei</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>telefono</td>
+	<td>098245678</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>cellulare</td>
+	<td>3402343879</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Salva']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//div[@id='content']/table.2.0</td>
+	<td>Pompei</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//div[@id='content']/table.2.1</td>
+	<td>Girolamo</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//div[@id='content']/table.2.2</td>
+	<td>098245678</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//div[@id='content']/table.2.3</td>
+	<td>3402343879</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>//div[@id='content']/table.2.4</td>
+	<td>[X]</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

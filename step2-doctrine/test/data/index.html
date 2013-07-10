@@ -1,0 +1,82 @@
+<html><head>
+  
+    <title>Rubrica Telefonica</title>
+    
+    <style>
+    body{
+      font-family: Helvetica;
+      font-size: 14px;
+    }
+    
+    label{
+      display: block;
+      background-color: #ddd;
+      margin: 5px 0px;
+      padding: 4px;
+      font-weight: bold;
+      width: 250px;
+    }
+    
+    form{
+      margin-left: 10px;
+    }
+    
+    input[type="text"]{
+      width: 250px;
+    }
+    
+    .actions{
+      margin-bottom: 10px;
+    }
+    
+    #footer{
+      padding: 5px;
+      border-top: 1px solid #000;
+      margin-top: 10px;
+    }
+    </style>
+  </head><body>
+  
+  <div id="header">
+    <h1>Rubrica Telefonica</h1>
+  </div>
+  
+  <div id="content">
+  
+  
+
+<div class="actions">
+  <a href="new.php">Nuovo contatto</a>
+ </div>
+ 
+  <table border="1" cellspacing="0" cellpadding="5" >
+<tr>
+    <th>Cognome</th>
+    <th>Nome</th>
+    <th>Telefono</th>
+    <th>Cellulare</th>
+    <th>&nbsp;</th>
+  </tr>
+      <tr>
+      <td><a href="edit.php?id=1" title="Modifica">Fullone</a></td>
+      <td>Francesco</td>
+      <td><a href="callto://0543123543">0543123543</a></td>
+      <td><a href="callto://34012345">34012345</a></td>
+      <td>[<a href="elimina.php?id=1" title="Elimina" onclick="if (confirm('Sei sicuro?')) {return true;} return false;">X</a>]</td>
+    </tr>
+      <tr>
+      <td><a href="edit.php?id=2" title="Modifica">Trucchia</a></td>
+      <td>Francesco</td>
+      <td><a href="callto://12345">12345</a></td>
+      <td><a href="callto://234%2012345">234 12345</a></td>
+      <td>[<a href="elimina.php?id=2" title="Elimina" onclick="if (confirm('Sei sicuro?')) {return true;} return false;">X</a>]</td>
+    </tr>
+    </table>
+
+ 
+    </div>
+    
+    <div id="footer">
+    All &copy; phpDay 2009
+    </div>
+  </body></html>

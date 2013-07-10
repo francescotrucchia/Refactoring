@@ -1,0 +1,41 @@
+Facciamo refactoring per aggiungere una nuova feature
+
+- Vogliamo visualizzare la nostra rubrica su iphone utilizzando 
+   http://code.google.com/p/iui/
+   
+- Vogliamo sincronizzarla con AS400
+
+---------------------------------------------------------
+
+1. Write tests with PhpUnit + Selenium
+  1.1 Lanciamo selenium rc
+    - java -jar /usr/local/bin/selenium-server.jar
+
+  1.1 Prepariamo le fixtures
+    - Facciamo un dump del nostro database
+    - Prepariamo un insieme di dati significativi
+    - Carichiamo il database
+     
+  1.2 Prepariamo i test con selenium ide (CRUD)
+    - ListContactsTest.php
+    - CreateContactTest.php
+    - UpdateContactTest.php
+    - RemoveContactTest.php
+    - ValidationUpdateContactTest.php
+    
+2. The big refactoring
+  - Prendiamo tutti i record del database e spostiamoli in un orm
+  - Trasportiamo tutti il codice procedurale dentro una classe
+  
+  2.1 Creiamo una classe RubricaMain con tanti metodi statici quante sono le nostre azioni (file php)
+    - Testiamo la classe Rubrica Main
+    - Implementiamo la classe RubricaMain
+    
+  2.2 Sostituiamo la parte del database con un ORM
+    - installazione doctrine
+      - installa doctrine come external in lib/vendor http://www.doctrine-project.org/documentation/manual/1_1/en/getting-started#installing:svn-externals
+      - crea doctrine bootstrap in lib/bootstrap/doctrine.php
+    - refactoring con estrazione metodi ed estrazioni classi
+    
+    
+    

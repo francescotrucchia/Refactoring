@@ -1,0 +1,67 @@
+1. Titolo
+
+2. Chi sono
+
+3. Agenda
+
+4. Che cos'è il refactoring
+
+  - Refactoring: 
+     a change made to the internal structure of software to make it easier to understand and cheaper to modify 
+     without changing its observable behavior.
+  
+5. Perchè fare refactoring
+
+  - Refactoring Improves the Design of Software
+  - Refactoring Makes Software Easier to Understand
+  - Refactoring Helps You Program Faster
+
+6. Quando fare il refactoring
+  - Three strikes and you refactor.
+  - Refactor When You Add Function
+  - Refactor When You Need to Fix a Bug
+  
+7. Design e refactoring
+
+   - As Alistair Cockburn puts it, "With design I can think very fast, but my thinking is full of little holes."
+   - You just code the first approach that comes into your head, get it working, and then refactor it into shape
+   
+8. Popular Bed Smells in Code
+
+  - Duplicated code (extract method)
+  - Long Method (extract method)
+  - Large Class (extract class)
+  - Switch Statements (Replace Conditional with Polymorphism)
+  - Lazy Class 
+  - Speculative Generality (collapse hierarchy, inline class, remove parameter, rename method)
+  - Data class
+  - Comments
+  
+9. Building Tests
+
+  - Fix a bug is simple, find it sometime is impossible
+  - Make sure all tests are fully automatic and that they check their own results.
+  - A suite of tests is a powerful bug detector that decapitates the time it takes to find bugs.
+  - if you want to refactor, you have to write tests
+  
+7. Le metodologie del refactoring
+
+  - Composing
+    - extract method
+    - inline method
+    
+  - Moving features between objects
+    - Move method
+    - extract class 
+    
+8. Un esempio pratico di big refactoring
+
+  
+  - Write tests
+  - Take each record type and turn it into a dumb data object with accessors.
+  - Take all the procedural code and put it into a single class.
+  - Take each long procedure and apply Extract Method and the related refactorings to break it down. As you break down the procedures, use Move Method to move each one to the appropriate dumb data class.
+  - Continue until you've removed all the behavior away from the original class. If the original class was a purely procedural class, it's very gratifying to delete it.
+  
+  - Refactoring changes the programs in small steps. If you make a mistake, it is easy to find the bug.
+  - Any fool can write code that a computer can understand. Good programmers write code that humans can understand.

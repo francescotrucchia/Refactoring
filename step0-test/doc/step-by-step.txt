@@ -1,0 +1,26 @@
+Facciamo refactoring per aggiungere una nuova feature
+
+- Vogliamo visualizzare la nostra rubrica su iphone utilizzando 
+   http://code.google.com/p/iui/
+   
+- Vogliamo sincronizzarla con AS400
+
+---------------------------------------------------------
+
+1. Write tests with PhpUnit + Selenium
+  1.1 Lanciamo selenium rc
+    - java -jar /usr/local/bin/selenium-server.jar
+
+  1.1 Prepariamo le fixtures
+    - Facciamo un dump del nostro database
+    - Prepariamo un insieme di dati significativi
+    - Carichiamo il database
+     
+  1.2 Prepariamo i test con selenium ide (CRUD)
+    - ListContactsTest.php
+    - CreateContactTest.php
+    - UpdateContactTest.php
+    - RemoveContactTest.php
+    
+    - ValidationUpdateContactTest.php
+    
